@@ -1,0 +1,88 @@
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: rgb(12, 12, 12);
+    margin: 0px;
+    padding: 128px;
+    height: 100%;
+    width: auto;
+    color: white;
+}
+
+.page-header {
+    background: rgb(12, 12, 12);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.page-header h3 {
+    font-size: 2em;
+    font-weight: 200;
+    margin: 0px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: calc(2em + 6vw);
+    text-shadow: -1px -1px 0 white, 4px -4px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    color: rgb(12, 12, 12);
+    line-height: 120%;  
+}
+
+h2 strong {
+    color: white;
+    text-shadow: -1px -1px 0 white, 4px -4px 0 rgb(167, 167, 167), -1px 1px 0 white, 1px 1px 0 white;
+}
+
+
+
+
+@keyframes drop-in-down {
+    from {
+     opacity: 0;
+     transform: translateY(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translateY(0px);
+    }
+   }
+
+.drop-in-down * {
+    animation: drop-in-down 1s ease 200ms backwards;
+    display: inline-block;
+   }
+
+.drop-in-down {
+    overflow: hidden;
+    display: inline-block;
+   }
+
+
+   @keyframes drop-in-up {
+    from {
+     opacity: 0;
+     transform: translateY(100px);
+    }
+    to {
+     opacity: 1;
+     transform: translateY(0px);
+    }
+   }
+
+.drop-in-up * {
+    animation: drop-in-up 1s ease 200ms backwards;
+    display: inline-block;
+   }
+
+.drop-in-up {
+    overflow: hidden;
+    display: inline-block;
+   }
+
+.delay-3 * {
+    animation-delay: 0.75s;
+}
