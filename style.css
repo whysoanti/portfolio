@@ -193,6 +193,11 @@ img {
 
 }
 
+noise {
+    width: 200px;
+    height: 200px;
+  }
+
 @media screen and (max-width: 576px) {
     
     .content-wrapper {
@@ -207,6 +212,10 @@ img {
     body {
 
         font-size: 1em;
+    }
+
+    .menu {
+        display: none;
     }
 
 }
