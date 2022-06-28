@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #ffffff #010101;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #010101;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 0px;
+    border: 4px none #ffffff;
+  }
+
+
+@font-face {
+    font-family: "PP Monument Extended";
+    src: url("../font.otf");
+  }
+
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1em;
+    margin: 0px;
+    height: 100%;
+    background-color: #010101;
+    color: #ffffff;
+}
+
+footer {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255));
+    box-sizing: border-box;
+    padding: 12px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,255),rgba(0,0,0,0));
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    padding: 12px;
+    position: fixed;
+    top: 0;
+}
+
+.content-wrapper {
+    padding: 128px;
+    padding-top: 256px;
+    overflow-x: hidden;
+}
+
+.menu {
+    gap: 32px;
+    padding: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    text-emphasis: none;
+}
+
+a {
+    color: #ffffff;
+}
+
+.logo {
+    padding: 12px;
+}
+
+.scroll-hint-container {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+h2 {
+    font-family: "PP Monument Extended";
+    font-size: 8em;
+    margin: 0px;
+    color: aquamarine;
+    text-transform: lowercase;
+}
+
+
+img {
+    width: 100%;
+    height: auto:
+}
+
+
+.full-size-text {
+    width: 100%;
+    height: auto;
+    color: aquamarine;
+}
+
+.full-size-text text {
+    font-family: "PP Monument Extended";
+    font-size: 6.4em;
+    margin: 0px;
+    text-transform: lowercase;
+}
+
+
+@media screen and (max-width: 992px) {
+    
+
+    h2 {
+        font-size: 4em;
+    }
+
+    body {
+        
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    .content-wrapper {
+        padding: 64px;
+        padding-top: 128px;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    body {
+
+        font-size: 1em;
+    }
+
+}
