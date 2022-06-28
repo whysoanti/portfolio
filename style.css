@@ -201,7 +201,7 @@ noise {
 @media screen and (max-width: 576px) {
     
     .content-wrapper {
-        padding: 64px;
+        padding: 24px;
         padding-top: 128px;
     }
 
@@ -211,7 +211,7 @@ noise {
 
     body {
 
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .sitenav {
